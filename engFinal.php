@@ -21,7 +21,7 @@
 
 
 	  	<a class="btn btn-info" href="engviewsans.php">View Answer</a>
-	  	<a class="btn btn-success" href="startEngtest.php">Start Again</a>
+	  	<a class="btn btn-success" href="exam.php">Start Again</a>
 	  </div>
 	  
  </div>

@@ -5,11 +5,11 @@ $(function(){
         var email    = $("#email").val();
         var username = $("#username").val();
         var password = $("#password").val();
-        
-        var confirm = $("#confirm").val();
-        var datastring = 'name='+name+'&email='+email+ '&username='+username+'&password='+password+'&confirm='+confirm;
+        var confirm  = $("#confirm").val();
+       
+        var datastring = 'name='+name+'&email='+email+ '&password='+password+ '&username='+username+ '&confirm='+confirm;
         $.ajax({
-          method: "POST",
+          type: "POST",
           url:"getregister.php",
           data: datastring,
            cache: false,

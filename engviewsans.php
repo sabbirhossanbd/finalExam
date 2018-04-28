@@ -57,7 +57,7 @@
 	  			<?php } } ?>
 	  			
 	  		</table>
-	   <a href="startEngtest.php">Start Again</a>
+	   <a href="exam.php">Test Another Exam!</a>
 	  </div>
 </div>
 

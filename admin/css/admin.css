@@ -63,3 +63,8 @@ input [type="number"]{
 	padding: 5px;
 	width: 200px;
 }
+
+.dropdown-menu > li > a:hover {
+		background-color: #848114;
+		
+	}

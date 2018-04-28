@@ -6,13 +6,13 @@
     }else{
     	header("Location:exam.php");
     }
-    $total = $exm->getEngTotalRows();
-    $question = $exm->fetchEngQuestion($number);
+    $total = $exm->getAgriTotalRows();
+    $question = $exm->getAgriQuesByNumber($number);
    
 ?>
 <?php 
   if($_SERVER['REQUEST_METHOD'] == 'POST'){
-  	 $process =  $pro->engProcessData($_POST);
+  	 $process =  $pro->agriProcessData($_POST);
 
   }
 ?>
@@ -40,7 +40,7 @@
  	
  	
  </script>
- <style> .sab{color: #9AC11E;  } </style>
+  <style> .sab{color: #9AC11E;  } </style>
  <body onload="timeout();">
     
    
@@ -63,7 +63,7 @@
 	  				</td>
 	  			</tr>
                   <?php
-                    $answer = $exm->getEngAnswer($number);
+                    $answer = $exm->getAgriAnswer($number);
                     if($answer){
                     	while ($result = $answer->fetch_assoc()) {
                     		
@@ -89,3 +89,4 @@
 </body>
 
 <?php include_once 'inc/footer.php'; ?>
+

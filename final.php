@@ -2,6 +2,11 @@
   <?php
    Session::checkSession();
   ?>
+  <?php
+   Session::checkSession();
+   $question = $exm->getQuestion();
+   $total = $exm->getTotalRows();
+  ?>
    <style>
   .starttest{width:500px;margin:0 auto;border:1px solid #FF5733;padding: 20PX;}
    </style>
@@ -21,7 +26,7 @@
 
 
 	  	<a class="btn btn-success" href="viewans.php">View Answer</a>
-	  	<a class="btn btn-info" href="starttest.php">Start Again</a>
+	  	<a class="btn btn-info" href="exam.php">Start Again</a>
 	  </div>
 	  
 </div>

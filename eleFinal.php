@@ -20,7 +20,7 @@
 	  	</h2>
 
 
-	  	<a class="btn btn-info" href="cseviewans.php">View Answer</a>
+	  	<a class="btn btn-info" href="eleviewans.php">View Answer</a>
 	  	<a class="btn btn-success" href="exam.php">Start Again</a>
 	  </div>
 	  

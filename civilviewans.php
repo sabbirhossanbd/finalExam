@@ -1,7 +1,7 @@
 <?php include 'inc/header.php'; ?>
 <?php 
   Session::checkSession();
-   $total = $exm->getCseTotalRows();
+   $total = $exm->getCivilTotalRows();
 ?>
 <style>
   .viewans a{
@@ -21,7 +21,7 @@
     
         <table>
           <?php
-                  $getques = $exm->getCseQuebyOrder();
+                  $getques = $exm->getCivilQuebyOrder();
                   if($getques){
                     while ($question = $getques->fetch_assoc()) {
                   
@@ -33,7 +33,7 @@
           </tr>
                   <?php
                     $number = $question['questionid'];
-                    $answer = $exm->getCseAnswer($number);
+                    $answer = $exm->getCivilAnswer($number);
                     if($answer){
                       while ($result = $answer->fetch_assoc()) {
                         

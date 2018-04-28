@@ -1,8 +1,8 @@
 <?php include 'inc/header.php'; ?>
   <?php
    Session::checkSession();
-   $question = $exm->getQuestion();
-   $total = $exm->getTotalRows();
+   $question = $exm->getAgriQuestion();
+   $total = $exm->getAgriTotalRows();
   ?>
   <style>
   	.starttest{
@@ -32,19 +32,19 @@
 }
 .starttest{width:500px;margin:0 auto;border:1px solid #ddd;padding: 20PX;}
   </style>
- <div class="jumbotron">
+
 <div class="main-exam">
+	<div class="jumbotron">
 	<h2>Welcome to online Exam</h2>
 	  <div class="starttest">
 	  	<h2>Test your Knowledge</h2>
-	  	<strong>This is multiple choice Question.</strong>
+	  	<strong>This is multiple choice system.</strong>
 	  	<ul>
 	  		<li><strong>Number of Question : </strong><?php echo $total; ?></li>
 	  		<li><strong>Question Type : </strong>Multiple Choice</li>
 	  	</ul>
-	  	<a class="btn btn-primary" href="test.php?q=<?php echo $question['questionid']; ?>">Start Test</a>
+	  	<a class="btn btn-primary" href="agritest.php?q=<?php echo $question['questionid']?>">Start Test</a>
 	  </div>
 </div>
 </div>
-
 <?php include_once 'inc/footer.php'; ?>
